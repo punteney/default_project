@@ -1,0 +1,129 @@
+body {color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;margin:0;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+h1 {font-size:2em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:1.5em;margin-bottom:0.75em;}
+h3 {letter-spacing: 0.05em; font-size:1.3em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {margin:0 0 1.5em;}
+p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
+a:focus, a:hover {color:#000;}
+a {color:#009;text-decoration:underline;}
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+strong {font-weight:bold;}
+em, dfn {font-style:italic;}
+dfn {font-weight:bold;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0 1.5em;}
+ul, ol {margin:0 1.5em 1.5em 1.5em;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+.small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.hide {display:none;}
+.quiet {color:#666;}
+.loud {color:#000;}
+.highlight {background:#ff0;}
+.added {background:#060;color:#fff;}
+.removed {background:#900;color:#fff;}
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}
+
+
+#navTop {position:relative;width: 100%; overflow: hidden;}
+#navComfort {padding: 5px 45px 7px;color: #545B4D;background-color:#20211F;border-bottom-color:#313330;text-align: right;}
+#navComfort a { color: #fff;text-decoration: none;}
+#navComfort a:hover {text-decoration:underline;}
+#navPrimary {height: 75px; padding: 10px 45px 10px 45px; }
+#navPrimary ul {width:400px;margin-left: 300px;padding: 5px;border: 1px solid #545B4D;overflow: hidden;}
+#navPrimary li {float: left; list-style: none; padding: 5px; margin: 0 5px 0 5px;}
+#navPrimary a { color: #545B4D;text-decoration:none;font-weight:700;}
+#navPrimary a:hover {text-decoration:underline;}
+#rocket {position: absolute; top: 10px; border:2px solid #fff;-webkit-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;-moz-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;}
+#gr_name {position: absolute; top:33px; left: 140px;}
+.page {width:80%;margin: 0 auto 20px auto;}
+.foot {margin-top:30px;}
+.copyRight {margin-top: 10px;padding:5px;border-top:1px solid #545B4D;}
+img { border: none;}
+.uniForm {width:300px; padding-left:15px;}
+.uniForm label, .uniForm .blockLabels label, .uniForm .blockLabels .label {margin:0 0 .15em 0;}
+.uniForm .textInput, .uniForm .passwordinput {width:225px;}
+.uniForm .submitInput {margin:10px;padding:10px;font-size:1.1em;}
+.uniForm .formHint, .uniForm .blockLabels .formHint {float: none;top:0;width:auto;clear:both;font-size:.75em;}
+.uniForm .ctrlHolder {margin-bottom: .33em;padding:7px 7px 3px 7px;border-bottom-color:1px solid #DFDFDF;}
+.uniForm .checkboxinput {float:left;margin-right:5px;}
+.uniForm textarea, .uniForm .blockLabels textarea {width:100%;}
+.wideForm { width: 600px;}
+
+.messages {background-color:#DFDFDF;border: 1px solid #545B4D;list-style:none;}
+.line {width:100%;overflow:hidden;}
+.size1of2 {float: left; width: 48%;}
+.size1of3 {float: left; margin-right: 5px; width: 32%;overflow:hidden;}
+.last {float: right;}
+
+/* Charts */
+.headerCharts {position: relative;width: 100%; overflow:hidden;}
+.chart {background-color: #20211F; border: 1px solid #000;}
+.smallChart {height: 85px;width: 195px;}
+.chartDataTable {display: none;}
+
+/* Sorted Table */
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(../img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../img/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../img/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
