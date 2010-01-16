@@ -3,11 +3,14 @@ from base import *
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-DATABASE_ENGINE = 'postgresql_psycopg2'
-DATABASE_HOST = 'localhost'
-DATABASE_NAME = 'recipes'
-DATABASE_USER = 'recipes'
-DATABASE_PASSWORD = 'pass12345'
+DATABASE_ENGINE = 'sqlite3'
+DATABASE_NAME = os.path.join(PROJECT_PATH, 'data/dev.db')
+
+# DATABASE_ENGINE = 'postgresql_psycopg2'
+# DATABASE_HOST = 'localhost'
+# DATABASE_NAME = ''
+# DATABASE_USER = ''
+# DATABASE_PASSWORD = ''
 
 SSL_ENABLED = False
 
