@@ -9,8 +9,6 @@ DATABASE_USER = ''
 DATABASE_PASSWORD = ''
 DATABASE_OPTIONS = {}
 
-SECRET_KEY = '50%_6q*splag)qsd@(zklf(w@4=4n!(6$@kv!4!v_maw47u6bi'
-
 BASE_DOMAIN = ''
 #MEDIA_URL = ''
 
