@@ -85,7 +85,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.cache.FetchFromCacheMiddleware',
 )
 
-ROOT_URLCONF = 'gr_select.urls'
+ROOT_URLCONF = 'urls'
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -109,3 +109,4 @@ CACHE_MIDDLEWARE_ANONYMOUS_ONLY = True
 
 LOGIN_URL='/login/'
 
+TEST_RUNNER = 'test_runner.run_tests'
