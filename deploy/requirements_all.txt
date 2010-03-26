@@ -2,7 +2,6 @@ Django
 ipython
 python-memcached
 south
-pymongo
 
 -e git+git://github.com/alex/django-templatetag-sugar.git#egg=templatetag_sugar
 
