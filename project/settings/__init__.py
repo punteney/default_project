@@ -3,17 +3,24 @@ import os
 ##################
 # Importing the appropriate settings file for this environment
 ##################
-ENVIRONMENT = os.getenv("CONFIG_IDENTIFIER")
+ENVIRONMENT = os.getenv("DJANGO_ENVIRONMENT")
 if not ENVIRONMENT:
-    print("******  No Environment is specified  ********")
+    print("******  No Environment is specified, using dev settings  ********")
     ENVIRONMENT = 'dev'
 
 if ENVIRONMENT == 'production':
     from production import *
-    print("Production settings enabled")
 elif ENVIRONMENT == 'dev':
     from dev import *
-    print("Dev settings enabled")
 elif ENVIRONMENT == 'staging':
     from staging import *
-    print("Staging settings enabled")
+
+# Try importing the local setting file (this shouldn't be kept in version 
+# control). It can have settings that are specific to this machine, or if you 
+# don't want passwords/etc kept in the version control can set them in the 
+# local
+try:
+    from local import *
+except ImportError:
+    # No local settings which is fine
+    pass

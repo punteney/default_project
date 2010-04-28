@@ -1,21 +1,16 @@
 from base import *
 
-DATABASE_ENGINE = 'postgresql_psycopg2'
 DATABASE_HOST = ''
 DATABASE_NAME = ''
 DATABASE_USER = ''
 DATABASE_PASSWORD = ''
-DATABASE_OPTIONS = {}
 
-BASE_DOMAIN = ''
-MEDIA_URL = ''
+MEDIA_URL = 'YOUR MEDIA URL'
 
 SSL_ENABLED = True
 SEND_BROKEN_LINK_EMAILS = True
-SESSION_COOKIE_DOMAIN = '.%s' % BASE_DOMAIN
-
-UPLOAD_URL = MEDIA_URL + 'uploads/'
 
 # Local Cache Settings
-CACHE_BACKEND = 'memcached://172.20.0.56:11211/'
-CACHE_MIDDLEWARE_SECONDS = 300
+# Enable for memcache backend
+#CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
+#CACHE_MIDDLEWARE_SECONDS = 300

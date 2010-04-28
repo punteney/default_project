@@ -4,8 +4,13 @@ DEBUG=False
 
 PROJECT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),'../')
 
-ADMINS=(('James', 'punteney@gmail.com'),)   # Site administrators and recipients of technical notifications.
+ADMINS=(('YOUR NAME', 'YOUR EMAIL'),)   # Site administrators and recipients of technical notifications.
 MANAGERS = ADMINS
+
+DATABASE_ENGINE = 'postgresql_psycopg2'
+DATABASE_HOST = ''
+
+# Email settings
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = ''
@@ -14,13 +19,6 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = ''
 SERVER_EMAIL = ''
 EMAIL_SUBJECT_PREFIX = ""
-
-AMQP_SERVER = ""
-AMQP_PORT = 5672
-AMQP_USER = ""
-AMQP_PASSWORD = ""
-AMQP_VHOST = ""
-
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -54,13 +52,12 @@ MEDIA_URL = '/media/'
 ADMIN_MEDIA_PREFIX = MEDIA_URL + 'admin/'
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'ikxw$+n0!_ru%$mz=n1#xn+2@v-4j#d2so-vat=@iqa&hnp(ct'
+SECRET_KEY = ''
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
     'django.template.loaders.app_directories.load_template_source',
-#     'django.template.loaders.eggs.load_template_source',
 )
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.auth",
@@ -72,7 +69,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_PATH, 'templates'),
 )
-
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.cache.UpdateCacheMiddleware',
@@ -102,11 +98,5 @@ INSTALLED_APPS = (
     'utils',
 )
 
-#AUTH_PROFILE_MODULE = 'profiles.Profile'
-
 CACHE_MIDDLEWARE_KEY_PREFIX = ''
 CACHE_MIDDLEWARE_ANONYMOUS_ONLY = True
-
-LOGIN_URL='/login/'
-
-TEST_RUNNER = 'test_runner.run_tests'
