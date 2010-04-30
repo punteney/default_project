@@ -1,7 +1,7 @@
 psycopg2
 django-debug-toolbar
 Werkzeug
-django-extensions
+# django-extensions
 fabric
 
 -e git+http://github.com/punteney/fabric_helpers.git#egg=fabric_helpers
