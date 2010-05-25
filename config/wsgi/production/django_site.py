@@ -11,7 +11,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.
 
 # If the project isn't in the 'project' dir, set the below to match 
 # your project
-os.environ['DJANGO_SETTINGS_MODULE'] = 'project.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 os.environ['DJANGO_DEBUG'] = 'False'
 os.environ['DJANGO_ENVIRONMENT'] = 'production'
 

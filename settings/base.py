@@ -81,7 +81,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.cache.FetchFromCacheMiddleware',
 )
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'urls'
 
 INSTALLED_APPS = (
     'django.contrib.admin',
