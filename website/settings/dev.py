@@ -3,13 +3,14 @@ from base import *
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-DATABASE_NAME = ''
-DATABASE_USER = ''
+#DATABASE_NAME = ''
+#DATABASE_USER = ''
 # DATABASE_PASSWORD = ''
 
 # Settings if using sqlite
-# DATABASE_ENGINE = 'sqlite3'
-# DATABASE_NAME = os.path.join(PROJECT_PATH, 'data/dev.db')
+DATABASE_ENGINE = 'sqlite3'
+# Puts the DB in the top project folder so it's not inlcuded source control
+DATABASE_NAME = os.path.join(PROJECT_PATH, '../../', 'data/dev.db')
 
 SSL_ENABLED = False
 
