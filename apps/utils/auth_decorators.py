@@ -1,13 +1,5 @@
 from django.http import HttpResponseForbidden
 
-def staff_required(fn):
-    def decorator(request, *args, **kwargs):
-        if request.user.is_staff:
-            return fn(request, *args, **kwargs)
-        else:
-            return HttpResponseForbidden()
-    return decorator
-
 def user_match_only(instance_keyword, attribute_name='user', allow_anonymous=False):
     def user_match_decorator(original_fn):
         def check_user_match(request, **kwargs):

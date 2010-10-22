@@ -1,0 +1,17 @@
+#!/bin/bash
+PROJ_DIR=`dirname $0`/../..
+# Delete the db file
+DB_FILE=/data/dev.db
+echo Deleting DB File: $PROJ_DIR$DB_FILE
+rm $PROJ_DIR$DB_FILE
+
+# Run syncdb and migrate
+echo Running syncdb and migrate
+echo #####
+$PROJ_DIR/gr/website/manage.py syncdb --noinput
+$PROJ_DIR/gr/website/manage.py migrate
+
+# Import the test data
+echo #####
+echo Importing the test fixtures
+$PROJ_DIR/gr/website/manage.py loaddata test
