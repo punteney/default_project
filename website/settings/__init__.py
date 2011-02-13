@@ -5,7 +5,6 @@ import os
 ##################
 ENVIRONMENT = os.getenv("DJANGO_ENVIRONMENT")
 if not ENVIRONMENT:
-    print("******  No Environment is specified, using dev settings  ********")
     ENVIRONMENT = 'dev'
 
 if ENVIRONMENT == 'production':

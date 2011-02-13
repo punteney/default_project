@@ -7,9 +7,6 @@ PROJECT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),'../')
 ADMINS=(('YOUR NAME', 'YOUR EMAIL'),)   # Site administrators and recipients of technical notifications.
 MANAGERS = ADMINS
 
-DATABASE_ENGINE = 'postgresql_psycopg2'
-DATABASE_HOST = ''
-
 # Email settings
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
@@ -25,7 +22,8 @@ EMAIL_SUBJECT_PREFIX = ""
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/New_York'
+# TIME_ZONE = 'America/New_York'
+TIME_ZONE = 'America/Los_Angeles'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
