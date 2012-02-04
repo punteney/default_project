@@ -67,6 +67,12 @@ form ul.inline li {
     width: 8em;
 }
 
+.aligned ul label {
+    display: inline;
+    float: none;
+    width: auto;
+}
+
 .colMS .aligned .vLargeTextField, .colMS .aligned .vXMLLargeTextField {
     width: 350px;
 }
@@ -134,13 +140,12 @@ fieldset.collapsed h2, fieldset.collapsed {
 }
 
 fieldset.collapsed h2 {
-    background-image: url(../img/admin/nav-bg.gif);
+    background-image: url(../img/nav-bg.gif);
     background-position: bottom left;
     color: #999;
 }
 
 fieldset.collapsed .collapse-toggle {
-    padding: 3px 5px !important;
     background: transparent;
     display: inline !important;
 }
@@ -156,10 +161,14 @@ fieldset.monospace textarea {
 .submit-row {
     padding: 5px 7px;
     text-align: right;
-    background: white url(../img/admin/nav-bg.gif) 0 100% repeat-x;
+    background: white url(../img/nav-bg.gif) 0 100% repeat-x;
     border: 1px solid #ccc;
     margin: 5px 0;
     overflow: hidden;
+}
+
+body.popup .submit-row {
+    overflow: auto;
 }
 
 .submit-row input {
@@ -175,7 +184,7 @@ fieldset.monospace textarea {
 }
 
 .submit-row .deletelink {
-    background: url(../img/admin/icon_deletelink.gif) 0 50% no-repeat;
+    background: url(../img/icon_deletelink.gif) 0 50% no-repeat;
     padding-left: 14px;
 }
 
@@ -242,15 +251,12 @@ fieldset.monospace textarea {
     color: #666;
     padding: 3px 5px;
     font-size: 11px;
-    background: #e1e1e1 url(../img/admin/nav-bg.gif) top left repeat-x;
+    background: #e1e1e1 url(../img/nav-bg.gif) top left repeat-x;
     border-bottom: 1px solid #ddd;
 }
 
 .inline-related h3 span.delete {
-    padding-left: 20px;
-    position: absolute;
-    top: 2px;
-    right: 10px;
+    float: right;
 }
 
 .inline-related h3 span.delete label {
@@ -272,6 +278,11 @@ fieldset.monospace textarea {
     font-weight: bold;
     background: #bcd;
     color: #fff;
+}
+
+.inline-group .tabular fieldset.module {
+    border: none;
+    border-bottom: 1px solid #ddd;
 }
 
 .inline-related.tabular fieldset.module table {
@@ -320,8 +331,28 @@ fieldset.monospace textarea {
     padding: 0 5px;
 }
 
-.inline-group ul.tools a.add {
-    background: url(../img/admin/icon_addlink.gif) 0 50% no-repeat;
-    padding-left: 14px;
+.inline-group div.add-row,
+.inline-group .tabular tr.add-row td {
+    color: #666;
+    padding: 3px 5px;
+    border-bottom: 1px solid #ddd;
+    background: #e1e1e1 url(../img/nav-bg.gif) top left repeat-x;
 }
 
+.inline-group .tabular tr.add-row td {
+    padding: 4px 5px 3px;
+    border-bottom: none;
+}
+
+.inline-group ul.tools a.add,
+.inline-group div.add-row a,
+.inline-group .tabular tr.add-row td a {
+    background: url(../img/icon_addlink.gif) 0 50% no-repeat;
+    padding-left: 14px;
+    font-size: 11px;
+    outline: 0; /* Remove dotted border around link */
+}
+
+.empty-form {
+    display: none;
+}

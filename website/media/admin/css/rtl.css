@@ -46,6 +46,11 @@ th {
     float: left;
 }
 
+thead th:first-child,
+tfoot td:first-child {
+    border-left: 1px solid #ddd !important;
+}
+
 /* LAYOUT */
 
 #user-tools {
@@ -73,6 +78,12 @@ div.breadcrumbs {
     margin-right: 10px !important;
 }
 
+/* SORTABLE TABLES */
+
+table thead th.sorted .sortoptions {
+   float: left;
+}
+
 /* dashboard styles */
 
 .dashboard .module table td a {
@@ -83,7 +94,7 @@ div.breadcrumbs {
 /* changelists styles */
 
 .change-list .filtered {
-    background: white url(../img/admin/changelist-bg_rtl.gif) top left repeat-y !important;
+    background: white url(../img/changelist-bg_rtl.gif) top left repeat-y !important;
 }
 
 .change-list .filtered table {
@@ -98,7 +109,7 @@ div.breadcrumbs {
     border-right: 1px solid #ddd;
 }
 
-.change-list .filtered table, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
+.change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
     margin-right: 0px !important;
     margin-left: 160px !important;
 }
@@ -110,6 +121,18 @@ div.breadcrumbs {
     border-right: 5px solid #ccc;
     padding-right: 5px;
     margin-right: -10px;
+}
+
+.filtered .actions {
+    border-left:1px solid #DDDDDD;
+    margin-left:160px !important;
+    border-right: 0 none;
+    margin-right:0 !important;
+}
+
+#changelist table tbody td:first-child, #changelist table tbody th:first-child {
+    border-right: 0;
+    border-left: 1px solid #ddd;
 }
 
 /* FORMS */
@@ -128,7 +151,7 @@ div.breadcrumbs {
 }
 
 .submit-row .deletelink {
-    background: url(../img/admin/icon_deletelink.gif) 0 50% no-repeat;
+    background: url(../img/icon_deletelink.gif) 0 50% no-repeat;
     padding-right: 14px;
 }
 
@@ -149,6 +172,7 @@ input[type=submit].default, .submit-row input.default {
 fieldset .field-box {
     float: right;
     margin-left: 20px;
+    margin-right: 0;
 }
 
 .errorlist li {
@@ -187,9 +211,13 @@ fieldset .field-box {
     text-align: right;
 }
 
+.inline-deletelink {
+    float: left;
+}
+
 /* MISC */
 
-.inline-related h2 {
+.inline-related h2, .inline-group h2 {
     text-align: right
 }
 
@@ -198,9 +226,20 @@ fieldset .field-box {
     padding-left: inherit;
     left: 10px;
     right: inherit;
+    float:left;
 }
 
 .inline-related h3 span.delete label {
     margin-left: inherit;
     margin-right: 2px;
+}
+
+/* IE7 specific bug fixes */
+
+div.colM {
+    position: relative;
+}
+
+.submit-row input {
+    float: left;
 }

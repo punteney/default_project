@@ -1,7 +1,7 @@
 Django
+django-classy-tags
 ipython
 python-memcached
 south
-
--e git+git://github.com/alex/django-templatetag-sugar.git#egg=templatetag_sugar
+typogrify
 
